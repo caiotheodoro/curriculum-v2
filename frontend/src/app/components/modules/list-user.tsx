@@ -3,6 +3,14 @@
 import { trpc } from "@/utils/trpc/trpc";
 import Image from "next/image";
 
+interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  role: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
 export default function ListUsers() {
   const { data } = trpc.getUsers.useQuery({ limit: 10, page: 1 });
 
@@ -18,7 +26,7 @@ export default function ListUsers() {
             gap: 20,
           }}
         >
-          {data?.data.users?.map((user) => (
+          {data?.data.users?.map((user: UserProps) => (
             <div
               key={user.id}
               className="flex flex-col justify-center items-center border-gray-200 border"
