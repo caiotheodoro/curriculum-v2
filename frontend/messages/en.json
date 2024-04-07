@@ -1,0 +1,22 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Welcome to the home page"
+  },
+  "navbar": {
+    "author": "Caio Theodoro",
+    "home": "home",
+    "aboutme": "sobre mim",
+    "projects": "projetos"
+  },
+  "theme": {
+    "dark": "dark",
+    "light": "light"
+  },
+  "about": {
+    "title": "About me"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}

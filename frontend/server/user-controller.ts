@@ -1,6 +1,6 @@
-import prisma from '@/prisma/prisma-client';
+import prisma from '~/server/prisma/prisma-client';
 import { TRPCError } from '@trpc/server';
-import { CreateUserInput, FilterQueryInput } from './user-schema';
+import { CreateUserInput, FilterQueryInput } from '~/server/user-schema'
 
 export const createUserHandler = async ({
   input,

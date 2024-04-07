@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "Início",
+    "description": "Bem-vindo a nossa página inicial"
+  },
+  "navbar": {
+    "author": "Caio Theodoro",
+    "home": "início",
+    "aboutme": "sobre mim",
+    "projects": "projetos"
+  },
+  "theme": {
+    "light": "claro",
+    "dark": "escuro",
+    "system": "sistema"
+  },
+  "about": {
+    "title": "Sobre mim"
+  },
+  "projects": {
+    "title": "Projetos"
+  }
+}

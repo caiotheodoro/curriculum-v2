@@ -1,6 +1,6 @@
-import { createUserSchema, filterQuery } from './user-schema';
-import { createUserHandler, getUsersHandler } from './user-controller';
-import { t } from '@/utils/trpc-server';
+import { createUserSchema, filterQuery } from '~/server/user-schema';
+import { createUserHandler, getUsersHandler } from '~/server/user-controller';
+import { t } from '@/utils/trpc/trpc-server';
 
 const userRouter = t.router({
   createUser: t.procedure

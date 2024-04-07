@@ -1,0 +1,3 @@
+export enum COOKIE_ENUM {
+  NEXT_LOCALE = "NEXT_LOCALE",
+}
