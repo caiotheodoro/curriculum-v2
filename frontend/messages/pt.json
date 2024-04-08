@@ -1,12 +1,12 @@
 {
-  "home": {
-    "title": "Início",
+  "about": {
+    "title": "Olá! Sou o Caio, um engenheiro de software e pesquisador de ML brasileiro.",
     "description": "Bem-vindo a nossa página inicial"
   },
   "navbar": {
     "author": "Caio Theodoro",
-    "home": "início",
-    "aboutme": "sobre mim",
+    "about": "sobre",
+    "journey": "jornada",
     "projects": "projetos"
   },
   "theme": {
@@ -14,10 +14,16 @@
     "dark": "escuro",
     "system": "sistema"
   },
-  "about": {
-    "title": "Sobre mim"
-  },
   "projects": {
     "title": "Projetos"
+  },
+  "cookies": {
+    "title": "Nós usamos cookies",
+    "description": "Nós usamos cookies para garantir que você tenha a melhor experiência em nosso site. Para mais informações sobre como usamos cookies, por favor veja nossa política de cookies.",
+    "accept": "Aceitar",
+    "decline": "Recusar",
+    "learnmore": "Saiba mais",
+    "byclicking": "Ao clicar em \"",
+    "agreed": "\" você concorda com a nossa política de cookies."
   }
 }

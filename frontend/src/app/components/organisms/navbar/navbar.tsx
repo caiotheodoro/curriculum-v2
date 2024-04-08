@@ -9,17 +9,23 @@ import { useTranslations } from "next-intl";
 import { NavbarMobileBtn } from "./navbar-button";
 import { LanguageToggle } from "@/app/components/modecules/language-toggle";
 import { LocaleProps } from "@/@types/common";
+import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
+import { GradientBg } from "@/app/components/atoms/gradient-bg";
 
 export const Navbar = ({ locale }: LocaleProps) => {
   const t = useTranslations("navbar");
   const navMenu = getNavbarMenu(locale);
 
   return (
-    <nav className="md:grid grid-cols-12 border-b flex items-center justify-between relative z-10 bg-background overflow-x-auto space-mono">
+    <nav className="md:grid grid-cols-12 border-b flex items-center justify-between fixed z-10 bg-background overflow-x-auto space-mono w-full">
       <Link
         href="/"
-        className="md:border-r md:px-5 px-2.5 py-4 text-foreground md:col-span-3 lg:col-span-2 shrink-0 transition-colors"
+        className="md:border-r md:px-5 px-2.5 py-4 text-foreground md:col-span-3 lg:col-span-2 shrink-0 transition-colors flex items-center space-x-2 hover:text-primary gap-3"
       >
+        <Avatar>
+          <AvatarImage src="https://github.com/caiotheodoro.png" />
+          <AvatarFallback>CT</AvatarFallback>
+        </Avatar>
         {t("author")}
       </Link>
       <div className="md:col-span-9 lg:col-span-10 flex items-center justify-between mr-2">
@@ -36,6 +42,7 @@ export const Navbar = ({ locale }: LocaleProps) => {
           <NavbarMobileBtn />
         </div>
       </div>
+      <GradientBg />
     </nav>
   );
 };

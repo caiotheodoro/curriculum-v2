@@ -1,10 +1,10 @@
 export const getNavbarMenu = (locale: string) => [
   {
-    name: "home",
+    name: "about",
     path: `/${locale}/`,
   },
   {
-    name: "aboutme",
+    name: "journey",
     path: `/${locale}/about`,
   },
   {

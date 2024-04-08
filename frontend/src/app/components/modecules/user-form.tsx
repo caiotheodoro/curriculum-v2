@@ -19,7 +19,11 @@ const UserForm = () => {
       email: formData.get("email") as string,
     };
 
-    handleSubmit(newData as State);
+    try {
+      handleSubmit(newData as State);
+    } catch (error) {
+      console.error(error);
+    }
 
     return newData;
   };

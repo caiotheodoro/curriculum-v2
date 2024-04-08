@@ -6,7 +6,7 @@ import { useContext } from "react";
 export const useNavbar = (): NavbarMobileContextProps => {
   const context = useContext(NavbarContext);
   if (!context) {
-    throw new Error("useNavbar must be used within a NavbarMobileProvider");
+    throw new Error("Navbar error");
   }
   return context;
 };

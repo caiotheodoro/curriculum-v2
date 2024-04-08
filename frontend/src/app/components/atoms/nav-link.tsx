@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { removeLocaleFromPath } from "@/utils/format";
 
 type Props = {
   href: string;
@@ -11,7 +12,8 @@ type Props = {
 export const NavLink = ({ href, children }: Props) => {
   const segment = useSelectedLayoutSegment();
   const isActive =
-    segment === href.slice(1) || (segment === null && href === "/");
+    segment === removeLocaleFromPath(href.slice(4)) ||
+    (segment === null && RegExp(/\/$/).exec(href));
 
   return (
     <li className="relative group">
@@ -20,7 +22,7 @@ export const NavLink = ({ href, children }: Props) => {
         className={cn(
           "w-full h-full block py-4 px-5 transition-colors",
           "group-hover:text-foreground",
-          isActive ? "text-foreground" : "text-muted-foreground"
+          isActive ? "text-foregroun" : "text-muted-foreground"
         )}
       >
         {children}

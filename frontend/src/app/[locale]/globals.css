@@ -5,13 +5,13 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
+    --foreground: #121317;
 
     --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card-foreground: #121317;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
+    --popover-foreground: #121317;
 
     --primary: 220.9 39.3% 11%;
     --primary-foreground: 210 20% 98%;
@@ -30,19 +30,19 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
+    --ring: #121317;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 224 71.4% 4.1%;
+    --background: #121317;
     --foreground: 210 20% 98%;
 
-    --card: 224 71.4% 4.1%;
+    --card: #121317;
     --card-foreground: 210 20% 98%;
 
-    --popover: 224 71.4% 4.1%;
+    --popover: #121317;
     --popover-foreground: 210 20% 98%;
 
     --primary: 210 20% 98%;
@@ -69,11 +69,17 @@
 @layer base {
   * {
     @apply border-border;
+    scrollbar-width: none !important;
   }
 
   body {
     @apply bg-background text-foreground;
   }
+
+  span {
+    @apply font-sans;
+  }
+
 }
 
 .space-mono {

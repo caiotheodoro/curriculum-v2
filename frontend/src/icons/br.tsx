@@ -11,7 +11,6 @@ export function BrIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
       {...props}
     >
       <mask
-        id="mask0_270_54984"
         style={{ maskType: "luminance" }}
         maskUnits="userSpaceOnUse"
         x="0"
@@ -22,12 +21,7 @@ export function BrIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
         <rect width="16" height="12" fill="white" />
       </mask>
       <g mask="url(#mask0_270_54984)">
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M0 0V12H16V0H0Z"
-          fill="#009933"
-        />
+        <path fillRule="evenodd" clipRule="evenodd" fill="#009933" />
         <mask
           id="mask1_270_54984"
           style={{ maskType: "luminance" }}
@@ -38,8 +32,8 @@ export function BrIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
           height="12"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M0 0V12H16V0H0Z"
             fill="white"
           />
@@ -47,21 +41,21 @@ export function BrIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
         <g mask="url(#mask1_270_54984)">
           <g filter="url(#filter0_d_270_54984)">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.96339 1.85202L14.0643 6.10375L7.8804 10.0856L1.90446 6.02134L7.96339 1.85202Z"
               fill="#FFD221"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.96339 1.85202L14.0643 6.10375L7.8804 10.0856L1.90446 6.02134L7.96339 1.85202Z"
               fill="url(#paint0_linear_270_54984)"
             />
           </g>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M8 8.60001C9.38071 8.60001 10.5 7.48072 10.5 6.10001C10.5 4.71929 9.38071 3.60001 8 3.60001C6.61929 3.60001 5.5 4.71929 5.5 6.10001C5.5 7.48072 6.61929 8.60001 8 8.60001Z"
             fill="#2E42A5"
           />
@@ -75,58 +69,58 @@ export function BrIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
             height="6"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8 8.60001C9.38071 8.60001 10.5 7.48072 10.5 6.10001C10.5 4.71929 9.38071 3.60001 8 3.60001C6.61929 3.60001 5.5 4.71929 5.5 6.10001C5.5 7.48072 6.61929 8.60001 8 8.60001Z"
               fill="white"
             />
           </mask>
           <g mask="url(#mask2_270_54984)">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.19 7.285L7.07832 7.34371L7.09965 7.21936L7.0093 7.13129L7.13416 7.11314L7.19 7L7.24584 7.11314L7.3707 7.13129L7.28035 7.21936L7.30168 7.34371L7.19 7.285Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.19 7.285L8.07832 7.34371L8.09965 7.21936L8.0093 7.13129L8.13416 7.11314L8.19 7L8.24584 7.11314L8.3707 7.13129L8.28035 7.21936L8.30168 7.34371L8.19 7.285Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.19 7.88501L8.07832 7.94372L8.09965 7.81936L8.0093 7.73129L8.13416 7.71315L8.19 7.60001L8.24584 7.71315L8.3707 7.73129L8.28035 7.81936L8.30168 7.94372L8.19 7.88501Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.69 5.785L7.57832 5.84371L7.59965 5.71936L7.5093 5.63129L7.63416 5.61314L7.69 5.5L7.74584 5.61314L7.8707 5.63129L7.78035 5.71936L7.80168 5.84371L7.69 5.785Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.69 6.785L7.57832 6.84371L7.59965 6.71936L7.5093 6.63129L7.63416 6.61314L7.69 6.5L7.74584 6.61314L7.8707 6.63129L7.78035 6.71936L7.80168 6.84371L7.69 6.785Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.98999 6.285L6.87831 6.34371L6.89964 6.21936L6.80929 6.13129L6.93415 6.11314L6.98999 6L7.04583 6.11314L7.17069 6.13129L7.08034 6.21936L7.10167 6.34371L6.98999 6.285Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.28998 6.68499L6.1783 6.74371L6.19963 6.61935L6.10927 6.53128L6.23414 6.51314L6.28998 6.39999L6.34582 6.51314L6.47068 6.53128L6.38033 6.61935L6.40165 6.74371L6.28998 6.68499Z"
               fill="#F7FCFF"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.59002 4.985L8.47835 5.04371L8.49967 4.91935L8.40932 4.83128L8.53418 4.81314L8.59002 4.7L8.64586 4.81314L8.77073 4.83128L8.68037 4.91935L8.7017 5.04371L8.59002 4.985Z"
               fill="#F7FCFF"
             />
@@ -145,9 +139,9 @@ export function BrIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
           width="12.1599"
           height="8.23362"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

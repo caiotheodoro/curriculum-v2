@@ -11,6 +11,11 @@ export interface LayoutProps extends ChildProps {
   params: LocaleProps;
 }
 
+export interface NodeProps {
+  children: React.ReactNode;
+
+}
+
 export interface NavbarProps  extends ChildProps,LocaleProps {
 }
 
