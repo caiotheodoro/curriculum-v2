@@ -4,7 +4,6 @@ import { Button } from "@/app/components/ui/button";
 
 import CookieService from "@/services/cookies";
 import { useRouter, usePathname } from "next/navigation";
-import { US as UsIcon, BR as BrIcon } from "country-flag-icons/react/3x2";
 export function LanguageToggle() {
   const router = useRouter();
   const pathname = usePathname();
