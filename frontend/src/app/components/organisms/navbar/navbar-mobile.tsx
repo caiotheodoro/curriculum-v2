@@ -17,13 +17,13 @@ export const NavbarMobile = ({ locale }: LocaleProps) => {
       {isOpen && (
         <FadeIn
           fromTopToBottom
-          className="absolute top-[57px] left-0 bg-background h-[calc(100%-57px-27px)] w-full z-50 p-5 divide-y overflow-y-auto"
+          className="absolute top-[70px] left-0 bg-background h-[calc(100%-50px-27px)] w-full z-50 p-5 divide-y overflow-y-auto"
         >
           {navSubMenu.map((menu, i) => (
             <Fragment key={menu.name}>
               <Link
                 href={menu.path}
-                className="block text-2xl py-4 first:pt-0 last:pb-0"
+                className="block text-xl py-4 first:pt-0 last:pb-0 font-mono"
                 onClick={toggleNavbar}
               >
                 {t(menu.name)}

@@ -21,17 +21,15 @@ export function LanguageToggle() {
   };
 
   const getCurrentFlag = () => {
-    return getLocale() === "en" ? (
-      <UsIcon className="w-7" />
-    ) : (
-      <BrIcon className="w-7" />
-    );
+    if (getLocale() === "en") {
+      return "PT";
+    }
+    return "EN";
   };
 
   return (
     <Button variant="outline" size="icon" onClick={handleToggle}>
       {getCurrentFlag()}
-      <span className="sr-only">Toggle language</span>{" "}
     </Button>
   );
 }
