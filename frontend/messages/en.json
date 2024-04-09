@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "Hi there! I'm Caio, a software engineer and ML researcher based in Brazil.",
-    "description": "Welcome to the about page"
+    "description": "As a versatilist software engineer, I'm constantly exploring new technologies and architecting systems to meet evolving demands, always fostering performance and interoperability between components. <br/><br/> Additionally, I'm deeply involved in accessibility research within machine learning, specially in the development of models that can help visually impaired people."
   },
   "navbar": {
     "author": "Caio Theodoro",

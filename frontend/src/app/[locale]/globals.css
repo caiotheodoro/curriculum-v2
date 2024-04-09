@@ -77,9 +77,9 @@
         @apply bg-background text-foreground;
     }
 
-    span {
+    /* span {
         @apply font-sans;
-    }
+    } */
 }
 
 .space-mono {

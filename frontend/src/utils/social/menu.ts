@@ -1,5 +1,5 @@
 import ROUTES from "@/config/routes";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import {  FileTextIcon, Github, Linkedin, Mail } from "lucide-react";
 
 export const socialMenu = [
   {
@@ -18,8 +18,8 @@ export const socialMenu = [
     icon:Mail,
   },
   {
-    name: "phone",
+    name: "resume",
     path: ROUTES.SOCIAL.PHONE,
-    icon: Phone,
+    icon: FileTextIcon,
   }
 ]
