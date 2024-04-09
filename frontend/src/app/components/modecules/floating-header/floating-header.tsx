@@ -5,7 +5,7 @@ import { memo, useEffect, useState } from "react";
 import { SCROLL_AREA_ID, MOBILE_SCROLL_THRESHOLD } from "@/lib/contants";
 
 export const FloatingHeader = memo(
-  ({
+  function FloatingHeader({
     scrollTitle,
     title,
     goBackLink,
@@ -15,7 +15,7 @@ export const FloatingHeader = memo(
     title?: string;
     goBackLink?: string;
     children?: React.ReactNode;
-  }) => {
+  }) {
     const [transformValues, setTransformValues] = useState({
       translateY: 0,
       opacity: scrollTitle ? 0 : 1,
