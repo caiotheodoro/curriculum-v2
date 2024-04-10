@@ -2,14 +2,18 @@ import Link from "next/link";
 
 import { NavLink } from "@/app/components/atoms/nav-link";
 
-import { ThemeToggle } from "@/app/components/modecules/theme-toggle";
+import { ThemeToggle } from "@/app/components/molecules/theme-toggle";
 
 import { getNavbarMenu } from "@/utils/navbar/menu";
 import { useTranslations } from "next-intl";
 import { NavbarMobileBtn } from "./navbar-button";
-import { LanguageToggle } from "@/app/components/modecules/language-toggle";
+import { LanguageToggle } from "@/app/components/molecules/language-toggle";
 import { LocaleProps } from "@/@types/common";
-import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/app/components/ui/avatar";
 import { GradientBg } from "@/app/components/atoms/gradient-bg";
 
 export const Navbar = ({ locale }: LocaleProps) => {

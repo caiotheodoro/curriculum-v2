@@ -6,7 +6,7 @@ import {
   CarouselItem,
 } from "@/app/components/ui/carousel";
 import { useRef } from "react";
-import { CardCarousel } from "@/app/components/modecules/carousel-card/carousel-card";
+import { CardCarousel } from "@/app/components/molecules/carousel-card/carousel-card";
 import { certifications } from "@/utils/certifications/items";
 
 export function CarouselStack() {

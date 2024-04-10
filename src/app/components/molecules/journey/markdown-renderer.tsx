@@ -2,7 +2,8 @@ import { MarkdownProps } from "@/@types/molecules";
 import Markdown from "markdown-to-jsx";
 
 import Link from "next/link";
-import { TweetCard } from "@/app/components/modecules/tweet-card/tweet-card";
+import { TweetCard } from "@/app/components/molecules/tweet-card/tweet-card";
+import Image from "next/image";
 
 export const MarkdownRenderer = ({
   options,
@@ -20,7 +21,7 @@ export const MarkdownRenderer = ({
           ),
           img: ({ alt, src }) => (
             <span className="mt-2 block overflow-hidden rounded-xl border">
-              <img
+              <Image
                 alt={alt}
                 src={`https:${src}`}
                 width={400}

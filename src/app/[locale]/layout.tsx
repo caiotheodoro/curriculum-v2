@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Inter, Space_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { LayoutProps } from "@/@types/common";
 import { Provider } from "@/providers";
@@ -8,14 +8,21 @@ import { NavbarMobile } from "@/app/components/organisms/navbar/navbar-mobile";
 import { Navbar } from "@/app/components/organisms/navbar/navbar";
 import { NavbarProvider } from "@/providers/navbar/navbar";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import CookieConsent from "@/app/components/modecules/cookie-consent/cookie-consent";
-import { SocialMenu } from "../components/modecules/social-menu";
+import CookieConsent from "@/app/components/molecules/cookie-consent/cookie-consent";
+import { SocialMenu } from "../components/molecules/social-menu";
 import { GeistSans } from "geist/font/sans";
 
 export const spaceMono = Space_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-space-mono",
+  display: "swap",
+});
+
+export const fontInter = Inter({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -36,7 +43,8 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           spaceMono.variable,
-          GeistSans.variable
+          GeistSans.variable,
+          fontInter.variable
         )}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
@@ -50,7 +58,7 @@ export default function RootLayout({
               <Navbar locale={locale} />
               <NavbarMobile locale={locale} />
             </NavbarProvider>
-            <main className="space-mono lg:p-14 lg:pt-28 md:p-8 md:pt-20 sm:p-8 sm:pt-20 pt-24 p-8 max-w-4xl m-auto">
+            <main className="space-mono lg:px-16 lg:pt-28 md:p-8 md:pt-20 sm:p-8 sm:pt-20 pt-24 p-8 max-w-4xl m-auto">
               {children}
             </main>
             <SocialMenu />

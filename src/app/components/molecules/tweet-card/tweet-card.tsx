@@ -1,7 +1,7 @@
 import { Tweet, TweetSkeleton } from "react-tweet";
 
 import { cn } from "@/lib/utils";
-import styles from "./tweet-card.module.css";
+import styles from "@/app/components/molecules/tweet-card/tweet-card.module.css";
 export const TweetCard = ({ id }: { id: string }) => {
   if (!id) return null;
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MarkdownRenderer } from "@/app/components/modecules/journey/markdown-renderer";
+import { MarkdownRenderer } from "@/app/components/molecules/journey/markdown-renderer";
 import { JourneyCardProps } from "@/@types/molecules";
 export const JourneyCard = ({
   title,

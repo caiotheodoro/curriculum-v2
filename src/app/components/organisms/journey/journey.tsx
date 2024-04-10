@@ -1,10 +1,10 @@
 import { Skeleton } from "@/app/components/ui/skeleton";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea } from "@/app/components/ui/scroll-area";
 import { Suspense } from "react";
-import { FloatingHeader } from "../../modecules/floating-header/floating-header";
-import { PageTitle } from "../../modecules/page-title/page-title";
+import { FloatingHeader } from "@/app/components/molecules/floating-header/floating-header";
+import { PageTitle } from "@/app/components/molecules/page-title/page-title";
 import { PlusIcon } from "lucide-react";
-import { JourneyCard } from "../../modecules/journey/journey-card";
+import { JourneyCard } from "@/app/components/molecules/journey/journey-card";
 import { JourneyCardProps } from "@/@types/molecules";
 
 export default async function Journey() {

@@ -1,5 +1,5 @@
 import { socialMenu } from "@/utils/social/menu";
-import { SocialNav } from "../atoms/social-nav";
+import { SocialNav } from "@/app/components/atoms/social-nav";
 import { createElement } from "react";
 
 export const SocialMenu = () => {
