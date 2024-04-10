@@ -1,7 +1,33 @@
 {
   "about": {
     "title": "Olá! Sou o Caio, um engenheiro de software e pesquisador de ML brasileiro.",
-    "description": "Como engenheiro de software versátil, estou constantemente explorando novas tecnologias e arquitetando sistemas para atender às demandas em evolução, sempre garantindo desempenho e interoperabilidade entre componentes. <br/><br/> Além disso, estou profundamente envolvido em pesquisas de acessibilidade em aprendizado de máquina, especificamente no desenvolvimento de modelos que podem ajudar pessoas com deficiência visual."
+    "description": "<span>Como engenheiro de software versátil, estou constantemente explorando novas tecnologias e arquitetando sistemas para atender às demandas em evolução, sempre garantindo desempenho e interoperabilidade entre componentes. <br/><br/> Além disso, estou profundamente envolvido em pesquisas de acessibilidade em aprendizado de máquina, especificamente no desenvolvimento de modelos que podem ajudar pessoas com deficiência visual.</span>",
+    "certificates": "Certificados",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "personal": {
+      "title": "infos-pessoais.json",
+      "age": {
+        "key": "idade",
+        "value": "23"
+      },
+      "degree": {
+        "key": "grau",
+        "value": "Bel. Ciencia da computação, UTFPR, 2024"
+      },
+      "work_experience": {
+        "key": "exp_trabalho",
+        "value": "{years} anos, {months} meses e {days} dias"
+      },
+      "working_at": {
+        "key": "trabalhando_em",
+        "value": "mb labs"
+      },
+      "hobbies": {
+        "key": "hobbies",
+        "value": "🏃 🎮 🎶"
+      }
+    }
   },
   "navbar": {
     "author": "Caio Theodoro",

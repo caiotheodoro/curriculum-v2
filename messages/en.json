@@ -1,7 +1,33 @@
 {
   "about": {
     "title": "Hi there! I'm Caio, a software engineer and ML researcher based in Brazil.",
-    "description": "As a versatilist software engineer, I'm constantly exploring new technologies and architecting systems to meet evolving demands, always fostering performance and interoperability between components. <br/><br/> Additionally, I'm deeply involved in accessibility research within machine learning, specially in the development of models that can help visually impaired people."
+    "description": "<span>As a versatilist software engineer, I'm constantly exploring new technologies and architecting systems to meet evolving demands, always fostering performance and interoperability between components. <br/><br/> Additionally, I'm deeply involved in accessibility research within machine learning, specially in the development of models that can help visually impaired people.</span>",
+    "certificates": "Certificates",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "personal": {
+      "title": "personal-infos.json",
+      "age": {
+        "key": "age",
+        "value": "23"
+      },
+      "degree": {
+        "key": "degree",
+        "value": "BSc. Computer Science, UTFPR, 2024"
+      },
+      "work_experience": {
+        "key": "work_experience",
+        "value": "{years} years, {months} months and {days} days"
+      },
+      "working_at": {
+        "key": "working_at",
+        "value": "mb labs"
+      },
+      "hobbies": {
+        "key": "hobbies",
+        "value": "🏃 🎮 🎶"
+      }
+    }
   },
   "navbar": {
     "author": "Caio Theodoro",
