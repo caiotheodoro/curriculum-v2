@@ -15,19 +15,20 @@ import {
   AvatarImage,
 } from "@/app/components/ui/avatar";
 import { GradientBg } from "@/app/components/atoms/gradient-bg";
+import { memo } from "react";
 
-export const Navbar = ({ locale }: LocaleProps) => {
+const Navbar = ({ locale }: LocaleProps) => {
   const t = useTranslations("navbar");
   const navMenu = getNavbarMenu(locale);
 
   return (
-    <nav className="md:grid grid-cols-12 border-b flex items-center justify-between fixed z-10 bg-background overflow-x-auto space-mono w-full">
+    <nav className="md:grid grid-cols-12 border-b flex items-center justify-between fixed z-10 bg-background  space-mono w-full overflow-hidden">
       <Link
         href="/"
         className="md:border-r md:px-5 px-2.5 py-4 text-foreground md:col-span-3 lg:col-span-2 shrink-0 transition-colors flex items-center space-x-2 hover:text-primary gap-3"
       >
         <Avatar>
-          <AvatarImage src="https://github.com/caiotheodoro.png" />
+          <AvatarImage src="https://github.com/caiotheodoro.png" alt="Avatar of Caio" />
           <AvatarFallback>CT</AvatarFallback>
         </Avatar>
         {t("author")}
@@ -50,3 +51,5 @@ export const Navbar = ({ locale }: LocaleProps) => {
     </nav>
   );
 };
+
+export default memo(Navbar);

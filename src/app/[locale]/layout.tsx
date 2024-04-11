@@ -4,13 +4,13 @@ import { Inter, Space_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { LayoutProps } from "@/@types/common";
 import { Provider } from "@/providers";
-import { NavbarMobile } from "@/app/components/organisms/navbar/navbar-mobile";
-import { Navbar } from "@/app/components/organisms/navbar/navbar";
+import  NavbarMobile  from "@/app/components/organisms/navbar/navbar-mobile";
 import { NavbarProvider } from "@/providers/navbar/navbar";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import CookieConsent from "@/app/components/molecules/cookie-consent/cookie-consent";
 import { SocialMenu } from "../components/molecules/social-menu";
 import { GeistSans } from "geist/font/sans";
+import Navbar from "@/app/components/organisms/navbar/navbar";
 
 export const spaceMono = Space_Mono({
   weight: ["400", "700"],

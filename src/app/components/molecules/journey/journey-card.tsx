@@ -8,8 +8,8 @@ export const JourneyCard = ({
   ...props
 }: JourneyCardProps) => {
   return (
-    <div className="word-break-word flex flex-col">
-      <span className="font-medium tracking-tight font-sans">{title}</span>
+    <div className="word-break-word flex flex-col gap-1">
+      <span className="font-medium tracking-tight font-inter">{title}</span>
       {description && (
         <MarkdownRenderer className="text-sm font-sans" {...props}>
           {description}
@@ -22,8 +22,7 @@ export const JourneyCard = ({
             alt={image.alt}
             width={image.width}
             height={image.height}
-            loading={props.index < 1 ? "eager" : "lazy"}
-            className="animate-reveal"
+            priority
           />
         </div>
       )}

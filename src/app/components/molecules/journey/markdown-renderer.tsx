@@ -1,9 +1,9 @@
 import { MarkdownProps } from "@/@types/molecules";
 import Markdown from "markdown-to-jsx";
 
-import Link from "next/link";
 import { TweetCard } from "@/app/components/molecules/tweet-card/tweet-card";
 import Image from "next/image";
+import { Link } from "../../atoms/link";
 
 export const MarkdownRenderer = ({
   options,
@@ -15,9 +15,9 @@ export const MarkdownRenderer = ({
       options={{
         ...options,
         overrides: {
-          a: ({ className, ...rest }) => <Link {...rest} />,
+          a: ({ className, ...rest }) => <Link className={`font-inter text-sm flex gap-1 ${className}`} {...rest}  />,
           p: ({ children }) => (
-            <p className="mb-2 text-sm font-sans">{children}</p>
+            <p className="mb-2 text-sm font-sans flex gap-1">{children}</p>
           ),
           img: ({ alt, src }) => (
             <span className="mt-2 block overflow-hidden rounded-xl border">

@@ -17,7 +17,7 @@ export const FadeIn = (props: React.ComponentPropsWithoutRef<typeof motion.div> 
         hidden: { opacity: 0, y: shouldReduceMotion ? 0 : props.fromTopToBottom ? -24 : 24 },
         visible: { opacity: 1, y: 0 }
       }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.2 }}
       {...(isInStaggerGroup
         ? {}
         : {

@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, memo } from "react";
 import { FadeIn, AnimatePresence } from "@/app/components/atoms/fade-in";
 import { useNavbar } from "@/hooks/navbar";
 import { LocaleProps } from "@/@types/common";
 import { getNavbarMenu } from "@/utils/navbar/menu";
 import { useTranslations } from "next-intl";
 
-export const NavbarMobile = ({ locale }: LocaleProps) => {
+const NavbarMobile = ({ locale }: LocaleProps) => {
   const t = useTranslations("navbar");
   const { isOpen, toggleNavbar } = useNavbar();
   const navSubMenu = getNavbarMenu(locale);
@@ -35,3 +35,5 @@ export const NavbarMobile = ({ locale }: LocaleProps) => {
     </AnimatePresence>
   );
 };
+
+export default memo(NavbarMobile);

@@ -1,3 +1,4 @@
+"use client";
 import { Skeleton } from "@/app/components/ui/skeleton";
 import { ScrollArea } from "@/app/components/ui/scroll-area";
 import { Suspense } from "react";
@@ -5,28 +6,16 @@ import { FloatingHeader } from "@/app/components/molecules/floating-header/float
 import { PageTitle } from "@/app/components/molecules/page-title/page-title";
 import { PlusIcon } from "lucide-react";
 import { JourneyCard } from "@/app/components/molecules/journey/journey-card";
-import { JourneyCardProps } from "@/@types/molecules";
+import { enLogbook, ptBrLogbook } from "@/utils/journey/logbook";
+import { usePathname } from "next/navigation";
 
-export default async function Journey() {
-  const allLogbook = [
-    {
-      year: 2024,
-      logs: [
-        {
-          title: "A new Workspace page",
-          description: `<p>I've just launched a brand new Workspace page! It's a place where I can highlight all the amazing products that I use every day to boost my productivity. If you're interested, you can check it out here.</p>`,
-        },
-        {
-          title: "Second Log",
-          description: `<p>This is my second log. I'm excited to continue this journey.</p>`,
-        },
-        {
-          title: "Second Log",
-          description: `<p>This is my second log. I'm excited to continue this journey.</>`,
-        },
-      ] as JourneyCardProps[],
-    },
-  ];
+export default function Journey() {
+  const pathname = usePathname();
+
+  const getLocale = () => {
+    return pathname.startsWith("/pt") ? "pt" : "en";
+  };
+  const allLogbook = getLocale() === "en" ? enLogbook : ptBrLogbook;
 
   return (
     <ScrollArea>

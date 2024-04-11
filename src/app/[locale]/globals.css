@@ -8,9 +8,9 @@
         --sh-class: #904efa;
         --sh-identifier: #354150;
         --sh-property: #1e4253;
-        --sh-entity: #1ca6dd;
+        --sh-entity: #3c829e;
         --sh-jsxliterals: #1e228a;
-        --sh-string: #319de6;
+        --sh-string: #007acc;
         --sh-keyword: #f47067;
         --sh-comment: #a19595;
 
@@ -136,4 +136,17 @@
         font-family: var(--font-inter);
     }
 
+}
+
+
+@layer components {
+    .link {
+        @apply text-blue-600 hover:underline hover:underline-offset-4;
+    }
+
+    .content {
+        @apply mx-auto w-full lg:mb-0 lg:max-w-3xl;
+      }
+
+      
 }

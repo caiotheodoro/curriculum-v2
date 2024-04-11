@@ -16,7 +16,7 @@ export const CardCarousel = ({
           <Image
             alt="Certificate"
             className="rounded-md object-cover"
-            height="60"
+            height="65"
             src={src}
             style={{
               aspectRatio: "200/150",
