@@ -11,6 +11,7 @@ import CookieConsent from "@/app/components/molecules/cookie-consent/cookie-cons
 import { SocialMenu } from "../components/molecules/social-menu";
 import { GeistSans } from "geist/font/sans";
 import Navbar from "@/app/components/organisms/navbar/navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -60,6 +61,7 @@ export default function RootLayout({
             </NavbarProvider>
             <main className="space-mono lg:px-16 lg:pt-28 md:p-8 md:pt-20 sm:p-8 sm:pt-20 pt-24 p-8 max-w-4xl m-auto">
               {children}
+              <SpeedInsights />
             </main>
             <SocialMenu />
           </Provider>
