@@ -1,4 +1,3 @@
-"use client";
 import { Skeleton } from "@/app/components/ui/skeleton";
 import { ScrollArea } from "@/app/components/ui/scroll-area";
 import { Suspense } from "react";
@@ -7,15 +6,10 @@ import { PageTitle } from "@/app/components/molecules/page-title/page-title";
 import { PlusIcon } from "lucide-react";
 import { JourneyCard } from "@/app/components/molecules/journey/journey-card";
 import { enLogbook, ptBrLogbook } from "@/utils/journey/logbook";
-import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export default function Journey() {
-  const pathname = usePathname();
-
-  const getLocale = () => {
-    return pathname.startsWith("/pt") ? "pt" : "en";
-  };
-  const allLogbook = getLocale() === "en" ? enLogbook : ptBrLogbook;
+  const allLogbook = useLocale() === "en" ? enLogbook : ptBrLogbook;
 
   return (
     <ScrollArea>

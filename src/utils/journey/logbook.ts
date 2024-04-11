@@ -25,11 +25,6 @@ export const enLogbook = [
       {
         title: "Developed a new game!",
         description: `<p>now using godot, I've builded a rythmn battle <a href='https://github.com/caiotheodoro/rhythmn-game' className='link' target='_blank'>game!</a></p>`,
-        image: {
-          src: '/game.png',
-          width: 450,
-          height: 300,
-        },
       },
       {
         title: "Got a bunch of new badges 📜",
@@ -176,11 +171,6 @@ export const ptBrLogbook = [
       {
         title: "Desenvolvi um novo jogo!",
         description: `<p>Agora utilizando o Godot, desenvolvi um jogo de batalha baseada em ritmo <a href='https://github.com/caiotheodoro/rhythmn-game' className='link' target='_blank'>olha só</a></p>`,
-        image: {
-          src: '/game.png',
-          width: 450,
-          height: 300,
-        },
       },
       {
         title: "Conquistei vários distintivos 📜",

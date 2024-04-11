@@ -40,7 +40,8 @@
     "light": "light"
   },
   "projects": {
-    "title": "Projects"
+    "opensource": "open-source projects",
+    "notebooks": "notebooks"
   },
   "cookies": {
     "title": "We use cookies",

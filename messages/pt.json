@@ -41,7 +41,8 @@
     "system": "sistema"
   },
   "projects": {
-    "title": "Projetos"
+    "opensource": "projetos open-source",
+    "notebooks": "notebooks"
   },
   "cookies": {
     "title": "Nós usamos cookies",

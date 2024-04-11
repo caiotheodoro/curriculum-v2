@@ -28,8 +28,8 @@ export const fontInter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Caio Theodoro Curriculum",
-  description: "All about Caio Theodoro",
+  title: "Caio Theodoro",
+  description: "My personal website :)",
 };
 
 export default function RootLayout({
