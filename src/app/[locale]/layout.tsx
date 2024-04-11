@@ -4,14 +4,15 @@ import { Inter, Space_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { LayoutProps } from "@/@types/common";
 import { Provider } from "@/providers";
-import  NavbarMobile  from "@/app/components/organisms/navbar/navbar-mobile";
+import NavbarMobile from "@/app/components/organisms/navbar/navbar-mobile";
 import { NavbarProvider } from "@/providers/navbar/navbar";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import CookieConsent from "@/app/components/molecules/cookie-consent/cookie-consent";
 import { SocialMenu } from "../components/molecules/social-menu";
 import { GeistSans } from "geist/font/sans";
 import Navbar from "@/app/components/organisms/navbar/navbar";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { sharedDescription, sharedTitle } from "@/app/shared-metadata";
 
 export const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -26,11 +27,6 @@ export const fontInter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
-export const metadata: Metadata = {
-  title: "Caio Theodoro",
-  description: "My personal website :)",
-};
 
 export default function RootLayout({
   children,
@@ -48,6 +44,7 @@ export default function RootLayout({
           fontInter.variable
         )}
       >
+        <link rel="icon" href="favicon.ico" />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Provider
             attribute="class"
@@ -71,3 +68,29 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://caiotheodoro.dev"),
+  robots: {
+    follow: true,
+    index: true,
+  },
+  title: {
+    default: sharedTitle,
+    template: "%s | Caio Theodoro",
+  },
+  description: sharedDescription,
+  openGraph: {
+    title: {
+      template: `%s — ${sharedTitle}`,
+      default: sharedTitle,
+    },
+    description: sharedDescription,
+    type: "website",
+    url: "/",
+    siteName: sharedTitle,
+  },
+  alternates: {
+    canonical: "/",
+  },
+};

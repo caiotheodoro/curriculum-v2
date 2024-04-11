@@ -26,6 +26,10 @@ const nextConfig = {
             value: 'DENY',
           },
           {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, must-revalidate",
+          },
+          {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
           },
