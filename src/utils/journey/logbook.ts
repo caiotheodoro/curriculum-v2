@@ -163,7 +163,7 @@ export const ptBrLogbook = [
         title: "Fiz uma viagem com alguns amigos 🏖️",
         description: "<p>Paraíso! 📌</p>",
         image: {
-          src: '/praia.JPEG',
+          src: '/praia.jpg',
           width: 550,
           height: 413,
         },

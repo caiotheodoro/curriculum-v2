@@ -16,7 +16,7 @@ export const JourneyCard = ({
         </MarkdownRenderer>
       )}
       {image?.src && (
-        <div className="mt-2.5 overflow-hidden rounded-xl bg-white">
+        <div className="mt-2.5 overflow-hidden rounded-xl bg-white items-center justify-center flex">
           <Image
             src={image.src}
             alt={image.alt}
