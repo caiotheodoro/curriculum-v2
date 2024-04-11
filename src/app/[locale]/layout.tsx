@@ -88,6 +88,14 @@ export const metadata: Metadata = {
     description: sharedDescription,
     type: "website",
     url: "/",
+    images: [
+      {
+        url: "/social-image.png",
+        width: 1200,
+        height: 630,
+        alt: sharedTitle,
+      },
+    ],
     siteName: sharedTitle,
   },
   alternates: {
