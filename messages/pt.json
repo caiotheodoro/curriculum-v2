@@ -1,7 +1,8 @@
 {
   "about": {
     "title": "Olá! Sou o Caio, um engenheiro de software e pesquisador de ML brasileiro.",
-    "description": "<span>Como engenheiro de software versátil, estou constantemente explorando novas tecnologias e arquitetando sistemas para atender às demandas em evolução, sempre garantindo desempenho e interoperabilidade entre componentes. <br/><br/> Além disso, estou profundamente envolvido em pesquisas de acessibilidade em aprendizado de máquina, especificamente no desenvolvimento de modelos que podem ajudar pessoas com deficiência visual.</span>",
+    "description": "Como engenheiro de software versátil, estou constantemente explorando novas tecnologias e arquitetando sistemas para atender às demandas em evolução, sempre garantindo desempenho e interoperabilidade entre componentes. ",
+    "subdescription": "Além disso, estou profundamente envolvido em pesquisas de acessibilidade em aprendizado de máquina, especificamente no desenvolvimento de modelos que podem ajudar pessoas com deficiência visual.",
     "certificates": "Certificados",
     "copy": "Copiar",
     "copied": "Copiado!",
