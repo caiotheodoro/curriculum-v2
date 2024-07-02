@@ -16,7 +16,7 @@ export const projectsEn = [
   {
     name: "TaxonHub",
     description: "Taxonhub io an application for collecting and processing inventory/taxonomic data.",
-    src: '/taxonHub.svg',
+    src: '/taxonhub.svg',
     link: 'https://github.com/stars/caiotheodoro/lists/taxonhub'
   },
 ];
@@ -38,7 +38,7 @@ export const projectsPt = [
   {
     name: "TaxonHub",
     description: "Taxonhub é uma aplicação para coleta e processamento de dados de inventário/taxonômicos.",
-    src: '/taxonHub.svg',
+    src: '/taxonhub.svg',
     link: 'https://github.com/stars/caiotheodoro/lists/taxonhub'
   },
 ];
