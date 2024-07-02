@@ -19,6 +19,7 @@ export default function Projects() {
         projects={projects}
         autoplay={false}
         carouselBasis="md:basis-1/2 lg:basis-1/2"
+         delay={3000}
       />
       <h1>{t("notebooks")}</h1>
       <ProjectCarousel
