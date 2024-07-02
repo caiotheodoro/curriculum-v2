@@ -10,13 +10,13 @@ export const projectsEn = [
   {
     name: "Readapt",
     description: "Readapt is a project that aims to help people with visual impairments to open source e-books (ePub).",
-    src: 'https://svgshare.com/i/15G_.svg',
+    src: '/readapt.svg',
     link: 'https://github.com/stars/caiotheodoro/lists/readapt'
   },
   {
     name: "TaxonHub",
     description: "Taxonhub io an application for collecting and processing inventory/taxonomic data.",
-    src: 'https://svgshare.com/i/15F1.svg',
+    src: '/taxonHub.svg',
     link: 'https://github.com/stars/caiotheodoro/lists/taxonhub'
   },
 ];
@@ -32,13 +32,13 @@ export const projectsPt = [
   {
     name: "Readapt",
     description: "Readapt é um projeto que tem como objetivo ajudar pessoas com deficiências visuais a acessar e-books de código aberto (ePubs).",
-    src: 'https://svgshare.com/i/15G_.svg',
+    src: '/readapt.svg',
     link: 'https://github.com/stars/caiotheodoro/lists/readapt'
   },
   {
     name: "TaxonHub",
     description: "Taxonhub é uma aplicação para coleta e processamento de dados de inventário/taxonômicos.",
-    src: 'https://svgshare.com/i/15F1.svg',
+    src: '/taxonHub.svg',
     link: 'https://github.com/stars/caiotheodoro/lists/taxonhub'
   },
 ];
