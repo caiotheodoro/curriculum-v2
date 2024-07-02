@@ -2,6 +2,12 @@
 
 export const projectsEn = [
   {
+    name: "Task circle",
+    description: "Task Circle is a project that aims to help people to organize their tasks and projects within a group.",
+    src: '/taskcircle.svg',
+    link: 'https://taskcircle.vercel.app/architecture',
+  },
+  {
     name: "Readapt",
     description: "Readapt is a project that aims to help people with visual impairments to open source e-books (ePub).",
     src: 'https://svgshare.com/i/15G_.svg',
@@ -17,6 +23,12 @@ export const projectsEn = [
 
 
 export const projectsPt = [
+  {
+    name: "Task circle",
+    description: "Task Circle é um projeto que tem como objetivo ajudar as pessoas a organizar suas tarefas e projetos dentro de um grupo.",
+    src: '/taskcircle.svg',
+    link: 'https://taskcircle.vercel.app/architecture',
+  },
   {
     name: "Readapt",
     description: "Readapt é um projeto que tem como objetivo ajudar pessoas com deficiências visuais a acessar e-books de código aberto (ePubs).",
